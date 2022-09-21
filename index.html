@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!--Header Section Start!-->
+    <div class="header">
+        <h1 id="title">Formulir Pendaftaran</h1>
+        <h2 id="subtitle">Pekan Olahraga dan Seni Guru TKA/TPA Tahun 2020</h2>
+    </div>
+    <!--Header Section End!-->
+
+    <!--Content Section Start!-->
+    <div class="content">
+
+        <table class="center" cellspacing="2" align="center" cellpadding="20" border="0">
+
+            <!-- Validation required to make sure that input only receives alphabets -->
+            <tr>
+                <td> <label for="nama">Nama Peserta:</label></td>
+                <td>
+                    <input type="text" onkeypress="return onlyAlphaKey(event)" placeholder="Masukkan Nama Anda" id="nama">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><label for="ttl">Tempat Tanggal Lahir:</label></td>
+                <td>
+                    <div class="ttl">
+                        <!-- Validation required to make sure that input only receives alphabets -->
+                        <input type="text" onkeypress="return onlyAlphaKey(event)" placeholder="Masukkan Tempat Lahir" id="pob">
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Validation required to make sure that input only receives numbers -->
+            <tr>
+                <td><label for="unit">Utusan Unit TKA/TPA:</label></td>
+                <td><input type="text" onkeypress="return onlyNumberKey(event)" placeholder="Masukkan Unit TKA/TPA" id="unit">
+                </td>
+            </tr>
+
+            <!-- Validation required to make sure that input only receives alphabets -->
+            <tr>
+                <td><label for="kd">Kelurahan/Desa:</label></td>
+                <td><input type="text" onkeypress="return onlyAlphaKey(event)" placeholder="Masukkan Kelurahan/Desa" id="kd">
+                </td>
+            </tr>
+
+            <!-- Validation required to make sure that input only receives alphabets -->
+            <tr>
+                <td><label for="kc">Kecamatan:</label></td>
+                <td><input type="text" onkeypress="return onlyAlphaKey(event)" placeholder="Masukkan Kecamatan" id="kc">
+                </td>
+            </tr>
+
+            <!-- Validation required to make sure that input only receives numbers -->
+            <tr>
+                <td><label for="phone">Nomor Telepon:</label></td>
+                <td>
+                    <input type="tel" onkeypress="return onlyNumberKey(event)" placeholder="Masukkan Nomor Telepon" id="phone ">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="lomba">Jenis Lomba:</label></td>
+                <td>
+                    <input type="radio" id="tarik" name="lomba" value="Tarik Tambang (4 Perempuan + 1 Laki = 5 Orang)">
+                    <label for="tarik">Tarik Tambang (4 Perempuan + 1 Laki = 5 Orang)</label><br>
+
+                    <input type="radio" id="lari" name="lomba" value="Lari Estafet (4 Perempuan)">
+                    <label for="lari">Lari Estafet (4 Perempuan)</label><br>
+
+                    <input type="radio" id="sodor" name="lomba" value="Gobak Sodor (4 Perempuan)">
+                    <label for="sodor">Gobak Sodor (4 Perempuan)</label><br>
+
+                    <input type="radio" id="tartil" name="lomba" value="Tartil (1 orang perwakilan TKA/TPA)">
+                    <label for="tartil">Tartil (1 orang perwakilan TKA/TPA)</label><br>
+
+                    <input type="radio" id="ceramah" name="lomba" value="Ceramah (1 orang perwakilan TKA/TPA)">
+                    <label for="ceramah">Ceramah (1 orang perwakilan TKA/TPA)</label><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="signature">Scan Tanda Tangan:</label></td>
+                <td>
+                    <input type="file" id="signature" name="filename"><br>
+                    <input type="submit">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit " value="Create " onClick="create_account() ">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--Content Section End!-->
+
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>
